@@ -1,52 +1,62 @@
-.container1{
-	/* font-size: 0;
-	padding:10px;
-	width:auto; */
-
+*{
+  margin:0;
+  padding:0;
+}
+.container{
 box-sizing:border-box;
 width: 100%;
 padding:10px;
 
-
 }
-
-
-.col-sm-4, .col-md-4,.col-lg-4,.col-sm-3,.col-md-3,.col-md-3,
-.col-sm-1,.col-md-1,.col-lg-1,.col-sm-2,.col-md-2,.col-lg-2,
-.col-sm-6,.col-md-6,.col-lg-6
+.col-md-4,.col-md-3,.col-md-6,.col-md-1,.col-md-2
 {
-  /*   box-sizing:border-box;
-  display: inline-block;
-  *display: inline-block;
-  *zoom:1;
-  margin:10px; */
+  
+   border-sizing:border-box;
+   padding:10px;
+   float:left;
+   text-align: center;
+   vertical-align: middle;
+ 
+}
+
+
+
+div[class^="contnt-"]{
 
    border-sizing:border-box;
-   margin:10px;
-   float:left;
+   padding:10px;
    text-align: center;
    vertical-align: middle;
 	border:1px solid #999;
 	background-color: #eee;
 	height: 50px;
+
 }
 
+@media screen and (max-width:768px){
 
-.container2{
-box-sizing:border-box;
-width: 100%;
-padding:10px;
-}
+          .col-xs-12 {
+             width: 100%;
+         }
+          .col-xs-3 {
+              width: 25%;
+         }
+          .col-xs-6 {
+             width: 50%;
+           }
+          .col-xs-2 {
+             width: 16.66666666666667%;
+          }
+          .col-xs-8 {
+              width: 66.66666666666667%;
+          }
 
-div[class^="col-xs-"]{
-
-   border-sizing:border-box;
-   margin:10px;
-   float:left;
-   text-align: center;
-   vertical-align: middle;
-	border:1px solid #999;
-	background-color: #eee;
-	height: 50px;
+     .col-xs-8,.col-xs-6,.col-xs-12,.col-xs-3,.col-xs-2{
+           border-sizing:border-box;
+           padding:10px;
+           float:left;
+           text-align: center;
+           vertical-align: middle;
+     }
 
 }
