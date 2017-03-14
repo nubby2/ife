@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务9，报表</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+	  <link rel="stylesheet" href="task9.css">
+    <script type="text/javascript" src="../jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script>
+          
+          $(function(){
+  $('.li0 .a1').each(function(){
+    $(this).click(function(){
+      if($(this).siblings().css('display')=="none"){
+        console.log('weikong');
+        $(this).siblings().css('display','block');
+      }else{
+        $(this).siblings().css('display','none');
+      };
+    })
+  })
+})
+     
+
+    </script>
+</head>
+<body>
+	
+  <div id="wrap">
+  	<header>
+		  <div class="container">
+		  	 <div class="row">
+		  	 	<div class="col-xs-5 col-sm-5 col-md-7 col-lg-7 left"><img src="images/top.png" alt=""></div>
+                <div class="col-xs-7 col-sm-7 col-md-5 col-lg-5 right">              
+                  <div class="row">
+                   	  <div class="col-xs-6 col-sm-7 col-md-7 col-lg-7 ">
+                   	  	<span class="glyphicon glyphicon-search search"></span>
+                   	  	<input type="text"  >
+                   	  </div>
+
+                      <div class="col-xs-6 col-sm-5 col-md-5 col-md-5 login">
+                      	<a style="color: rgb(255,255,255);">
+	                   <span class="glyphicon glyphicon-user"></span> User
+	                    </a>
+                      </div>
+                   </div>
+                	
+
+                </div>
+		  	 </div>
+		  </div>
+	</header>
+     
+     <nav>
+     	  <div class="content">
+     	  	   <div class="content_l">
+     	  	   	     <div class="message">
+                      <div id="round">
+                        <div id="own_img"> <img src="" alt=""></div>
+                      </div>     
+     	  	   	     	  <span>ABC123</span>
+     	  	   	     </div>
+                     <div class="total">
+                     	<div class="total_l">
+                     	<p id="collect_num">110</p>
+                      <p id="collect">收藏</p>
+                     	</div>
+                     	 <div class="total_r">
+                       <p id="fan_num">313</p>
+                     	 <p id="span">粉丝</p>
+                     	 </div>
+                     	 
+                     </div>
+                  
+                 <div class="item">
+                      <ul class="navs">
+                 <li class="li0"><a class="a1">个人报表</a>
+                 <ul class="nav1" id="nav101">
+                     <li class="li1"><a href="#">文件一</a>       
+                 
+                       <ul>
+                     <li class="li1"><a href="#">文档一</a></li>   
+                     <li class="li1"><a href="#">文档二</a></li>  
+                       </ul>
+                 
+                     </li>
+                     <li class="li1"><a href="">文件二</a>
+                       <ul>
+                     <li class="li1"><a href="">文档一</a></li>
+                     <li class="li1"><a href="">文档二</a></li>  
+                       </ul>
+                 
+                     </li>
+                     <li class="li1"><a href="">文件三</a>
+                       <ul>
+                     <li class="li1"><a href="">文档一</a></li>
+                     <li class="li1"><a href="">文档二</a></li>  
+                       </ul>
+                 
+                     </li>
+                   </ul>
+                 </li>
+                 
+                 <li class="li0"><a class="a1">个人收藏</a>
+                   
+                 </li>
+                 <li class="li0"><a class="a1">我的分享</a>
+                 
+                 </li>
+                 <li class="li0"><a class="a1">图库</a>
+                  
+                 </li>
+                 <li class="li0"><a class="a1">成长记录</a>
+                   
+                 </li>
+                  <li class="li0"><a class="a1">账户信息</a>
+                   
+                 </li>
+                 </ul>
+                 </div>
+
+             
+     	  	   </div>
+           
+                <div class="content_r">
+                	 <div id="site">                      
+                    <ol class="breadcrumb">
+                        <li>c站</li>
+                        <li>个人报表</li>
+                        <li>文件一</li>
+                        <li style="color:blue">文档一</li>
+                    </ol>
+                   </div>
+
+                  <div class="content_main">
+                      <div class="query">
+                           <div class="query1"><span>查询项</span>
+                            <select> 
+                              <option value="第一项">第一项</option> 
+                              <option value="第二项">第二项</option> 
+                              <option value="第三项">第三项</option> 
+                              <option value="第四项">第四项</option>
+                           </select>
+
+                           </div>
+                          
+                          <div class="query2">
+                            <p><span>买方</span>
+                             <select> 
+                              <option value="小A">小A</option> 
+                              <option value="小B">小B</option> 
+                              <option value="小C">小C</option> 
+                              <option value="小D">小D</option>
+                             </select>
+                            </p> 
+                            <p>
+                              <span>卖方</span> 
+                             <select> 
+                              <option value="小A">小A</option> 
+                              <option value="小B">小B</option> 
+                              <option value="小C">小C</option> 
+                              <option value="小D">小D</option>
+                             </select>
+                            </p>
+                            
+
+                          </div>
+
+                          <div class="query3">
+                            <p><span>日期</span><input type="date" value="2016-04-01"></p>
+                            <p><span>人数</span>
+                             <select> 
+                              <option value="10人">10人</option> 
+                              <option value="8人">8人</option> 
+                              <option value="6人">6人</option> 
+                              <option value="4人">4人</option>
+                             </select>
+
+
+                            </p>
+                          </div>
+                          
+                          <div class="query4">
+                            <p><span>总耗时</span><select> 
+                              <option value="10天">10天</option> 
+                              <option value="8天">8天</option> 
+                              <option value="6天">6天</option> 
+                              <option value="4天">4天</option>
+                             </select></p>
+                             <p>
+                               <span>成交项</span><select> 
+                              <option value="10项">10项</option> 
+                              <option value="8项">8项</option> 
+                              <option value="6项">6项</option> 
+                              <option value="4项">4项</option>
+                             </select>
+
+                             </p>
+                          </div>
+                          <div class="query5">
+                              <input type="button" value="搜索">
+                          </div>
+                      </div>
+                            
+                      <div class="price">
+                      <ul class="pagination">
+                        <li><a href="#"><div>&laquo;</div></a></li>
+                        <li><a href="#">
+                          <div>
+                             <p>10:00am</p>
+                             <p>￥<span>1200</span></p>
+                          </div>
+                        </a></li>
+                        <li><a href="#">
+                          <div>
+                             <p>11:00am</p>
+                             <p>￥<span>1300</span></p>
+                          </div>
+                        </a></li>
+                        <li><a href="#">
+                          <div>
+                             <p>12:00am</p>
+                             <p>￥<span>1200</span></p>
+                          </div>
+                        </a></li>
+                        <li><a href="#">
+                          <div>
+                             <p>01:00am</p>
+                             <p>￥<span>1400</span></p>
+                          </div>
+                        </a></li>
+                        <li><a href="#">
+                          <div>
+                             <p>02:00am</p>
+                             <p>￥<span>1500</span></p>
+                          </div>
+                        </a></li>
+                        <li><a href="#">
+                          <div>
+                             <p>03:00am</p>
+                             <p>￥<span>1800</span></p>
+                          </div>
+                        </a></li>
+
+                        <li><a href="#"><div>&raquo;</div></a></li>
+                     </ul>
+                     </div>
+                      <div id="total_April">
+                           <p>2016年4月份统计</p>
+                           <div id="t">
+                               <div id="t1">
+                                 <div id="t1_l">
+                                  <p>133311</p>
+                                   <p>成交量</p>
+                                 </div>
+                                 <div id="t1_r">
+                                   
+                                 </div>
+                               </div>
+                               <div id="t2">
+                                  <div id="t2_l">
+                                  <p>133311</p>
+                                   <p>成交量</p>
+                                 </div>
+                                 <div id="t2_r">
+                                   
+                                 </div>
+                               </div>    
+                               <div id="t3">
+                                  <div id="t3_l">
+                                  <p>133311</p>
+                                   <p>成交量</p>
+                                 </div>
+                                 <div id="t3_r">
+                                   
+                                 </div>
+                               </div>
+                               <div id="t4">
+                                  <div id="t4_l">
+                                  <p>133311</p>
+                                   <p>成交量</p>
+                                 </div>
+                                 <div id="t4_r">
+                                   
+                                 </div>
+                               </div>
+
+                           </div>
+
+
+                      </div>       <!-- content-main -->
+             
+                        <div class="product">
+                            <div class="product_l">
+                                <p>第一组项目</p>
+                               
+                                 <ul id="myTab" class="nav nav-tabs">
+                                   <li><a href="#a1" data-toggle="tab">项目一</a></li>
+                                   <li><a href="#a2" data-toggle="tab">项目二</a></li>
+                                   <li><a href="#a3" data-toggle="tab">项目三</a></li>
+                                   <li><a href="#a4" data-toggle="tab">项目四</a></li>
+                                   <li><a href="#a5" data-toggle="tab">项目五</a></li>
+
+                                 </ul>
+                                 <div id="myTabContent" class="tab-content">
+                                     <div class="tab-pane fade in active" id="a1">
+                                       <table border="1" >
+                                           <tr>
+                                             <td>购买材料一</td>
+                                             <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                           </tr>          
+                                              
+                                          <tr>
+                                             <td>购买材料二</td>
+                                             <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                           </tr>    
+
+                                           <tr>
+                                             <td>购买材料四</td>
+                                             <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料六</td>
+                                             <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料十三</td>
+                                             <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料二十</td>
+                                             <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                           </tr>    
+                                       </table>
+                                     </div>
+                                <div class="tab-pane fade in " id="a2">
+                                       <table border="1" >
+                                           <tr>
+                                             <td>购买材料一</td>
+                                             <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                           </tr>          
+                                              
+                                          <tr>
+                                             <td>购买材料二</td>
+                                             <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                           </tr>    
+
+                                           <tr>
+                                             <td>购买材料四</td>
+                                             <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料六</td>
+                                             <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料十三</td>
+                                             <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料二十</td>
+                                             <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                           </tr>    
+                                       </table>
+                                     </div>          
+
+                                    
+
+                                  <div class="tab-pane fade in " id="a3">
+                                       <table border="1" >
+                                           <tr>
+                                             <td>购买材料一</td>
+                                             <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                           </tr>          
+                                              
+                                          <tr>
+                                             <td>购买材料二</td>
+                                             <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                           </tr>    
+
+                                           <tr>
+                                             <td>购买材料四</td>
+                                             <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料六</td>
+                                             <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料十三</td>
+                                             <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料二十</td>
+                                             <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                           </tr>    
+                                       </table>
+                                     </div>
+                         <div class="tab-pane fade in " id="a4">
+                                       <table border="1" >
+                                           <tr>
+                                             <td>购买材料一</td>
+                                             <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                           </tr>          
+                                              
+                                          <tr>
+                                             <td>购买材料二</td>
+                                             <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                           </tr>    
+
+                                           <tr>
+                                             <td>购买材料四</td>
+                                             <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料六</td>
+                                             <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料十三</td>
+                                             <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料二十</td>
+                                             <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                           </tr>    
+                                       </table>
+                                     </div>
+                                <div class="tab-pane fade in " id="a5">
+                                       <table border="1" >
+                                           <tr>
+                                             <td>购买材料一</td>
+                                             <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                            <td>购买材料一</td>
+                                           </tr>          
+                                              
+                                          <tr>
+                                             <td>购买材料二</td>
+                                             <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                            <td>购买材料二</td>
+                                           </tr>    
+
+                                           <tr>
+                                             <td>购买材料四</td>
+                                             <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                            <td>购买材料四</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料六</td>
+                                             <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                            <td>购买材料六</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料十三</td>
+                                             <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                            <td>购买材料十三</td>
+                                           </tr>    
+                                           <tr>
+                                             <td>购买材料二十</td>
+                                             <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                            <td>购买材料二十</td>
+                                           </tr>    
+                                       </table>
+                                     </div>
+                                 </div>  
+
+                            </div>
+                            <div class="product_r">
+                               <p class="product_r_title">第一组项目</p>
+                                <div class="product_des">
+                                    <div class="p_title">
+                                       <p>标题</p>
+                                       <p>项目报表三</p>
+                                    </div>
+
+                                   <div class="p_price">
+                                      <p>价格</p>
+                                      <p>￥158</p>
+                                   </div>
+                                     <div class="p_own">
+                                       <p>负责人</p>
+                                       <p>小A</p>
+                                     </div>
+                                     <div class="detail_des">
+                                       <p>详细描述</p>
+                                       <p>该项目目前负责人是......</p>
+                                     </div>
+                                  
+                                     <div class="p_bottom">
+                                        <input type="checkbox"> 
+                                        <span>遵守保密协议</span>
+                                        <input type="button" value="搜索">
+                                     </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <div class="main_bottom"> 
+
+                               <div class="calander">
+                                <p>日历</p>
+                               </div>
+
+                               <div class="ranking_list">
+                                 <p class="ranking_list_title">汽车行业品牌榜</p>
+                                 <table border="1">
+                                    <thead>
+                                      <tr>
+                                        <th>排名</th>
+                                        <th>品牌</th>
+                                        <th>搜索指数</th>
+
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>大众</td>
+                                        <td colspan="2">
+                                          <p>48912001</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>丰田</td>
+                                        <td colspan="2">
+                                          <p>29307333</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr>
+<tr>
+                                        <td>3</td>
+                                        <td>奥迪</td>
+                                        <td colspan="2">
+                                          <p>23139070</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>4</td>
+                                        <td>本田</td>
+                                        <td colspan="2">
+                                          <p>22885564</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>5</td>
+                                        <td>福特</td>
+                                        <td colspan="2">
+                                          <p>22324792</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>6</td>
+                                        <td>宝马</td>
+                                        <td colspan="2">
+                                          <p>21444077</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>7</td>
+                                        <td>现代</td>
+                                        <td colspan="2">
+                                          <p>20144969</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>8</td>
+                                        <td>起亚</td>
+                                        <td colspan="2">
+                                          <p>29307333</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>9</td>
+                                        <td>奔驰</td>
+                                        <td colspan="2">
+                                          <p>29307333</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>10</td>
+                                        <td>别克</td>
+                                        <td colspan="2">
+                                          <p>29307333</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 28%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr><tr>
+                                        <td>2</td>
+                                        <td>丰田</td>
+                                        <td colspan="2">
+                                          <p>29307333</p>
+                                          <div class="progress" id="progress2">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" 
+                                                    aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                                </div>
+                                          </div>
+
+                                        </td>
+                                     
+                                      </tr>
+
+                                    </tbody>
+
+
+                                 </table>
+
+                               </div>
+                               
+
+
+
+                         </div>
+
+
+
+
+                      </div>      <!--  content_r    -->
+                 </div>            <!-- content -->
+                     
+                 
+
+
+
+
+
+                </div>  
+
+
+
+     	  </div>
+
+
+
+
+     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</body>
+</html>
