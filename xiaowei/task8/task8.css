@@ -35,22 +35,7 @@ div[class^="contnt-"]{
 
 @media screen and (max-width:768px){
 
-          .col-xs-12 {
-             width: 100%;
-         }
-          .col-xs-3 {
-              width: 25%;
-         }
-          .col-xs-6 {
-             width: 50%;
-           }
-          .col-xs-2 {
-             width: 16.66666666666667%;
-          }
-          .col-xs-8 {
-              width: 66.66666666666667%;
-          }
-
+         
      .col-xs-8,.col-xs-6,.col-xs-12,.col-xs-3,.col-xs-2{
            border-sizing:border-box;
            padding:10px;
