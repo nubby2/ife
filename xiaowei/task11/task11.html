@@ -3,6 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">   <!-- 取消百度转码 -->
+     <meta name="format-detection" content="telephone=no">
+         <!-- 手机号码不被显示为拨号链接 -->
+     <meta name="format-detection" content="email=no">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<title>任务十一移动web页面实战</title>
 	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link rel="stylesheet" href="task11.css">
@@ -20,31 +25,8 @@
     		 </div>
     	</div>
     </div>
-<!-- 	<nav class="navbar navbar-default" role="navigation">
-	 <div class="container-fluid">
-	 	  <div class="navbar-header">
-	 	  	   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
-	 	  	   	   <span class="sr-only">切换导航</span>
-	 	  	   	   <span class="icon-bar"></span>
-	 	  	   	   <span class="icon-bar"></span>
-	 	  	   	   <span class="icon-bar"></span>
-	 	  	   	   <span class="icon-bar"></span>
-	 	  	   	   <span class="icon-bar"></span>
-	 	  	   </button>
-	 	  </div>
-	 	  <div class="collapse navbar-collapse" id="example-navbar-collapse">
-	 	  	  <ul class="nav navbar-nav" >
-              	  <li ><a href="#">导航1</a></li>
-                  <li ><a href="#">导航2</a></li>
-                  <li ><a href="#">导航3</a></li>
-                  <li ><a href="#">导航4</a></li>
-                  <li ><a href="#">导航5</a></li>
-                  </ul>
-	 	  </div>
-	 </div>
-</nav> -->
 
-    <div class="container-fluid" id="bar">
+    <nav class="container-fluid" id="bar">
     	  	   <ul id="s_nav">
     	  	   	   <li><a href="#">导航</a></li>
     	  	   	   <li><a href="#">导航</a></li>
@@ -53,21 +35,25 @@
     	  	   	   <li><a href="#">导航</a></li>
 
     	  	   </ul>
-    </div>
+    </nav>
     
-    <div id="top_img">
+    <section id="top_img">
     	<img src="2.png" alt="" class="img-responsive">
-    </div>
+    </section>
     
-    <div class="box">
-    	<div class="sbox"><div class="nbox1"><img src="3.png" alt=""></div>标签</div>
-    	<div class="sbox"><div class="nbox1"><img src="3.png" alt=""></div>标签</div>
-    	<div class="sbox"><div class="nbox1"><img src="3.png" alt=""></div>标签</div>
-    	<div class="sbox"><div class="nbox1"><img src="3.png" alt=""></div>标签</div>
-    	<div class="sbox"><div class="nbox1"><img src="3.png" alt=""></div>标签</div>
-    </div>
+    <section class="box">
+        <ul class="clearfix">
+            <li><div class="nbox1"><img src="31.png" alt=""></div><a href="javascript:void(0)">标签</a></li>
+            <li><div class="nbox1"><img src="31.png" alt=""></div><a href="javascript:void(0)">标签</a></li>
+            <li><div class="nbox1"><img src="31.png" alt=""></div><a href="javascript:void(0)">标签</a></li>
+            <li><div class="nbox1"><img src="31.png" alt=""></div><a href="javascript:void(0)">标签</a></li>
+            <li><div class="nbox1"><img src="31.png" alt=""></div><a href="javascript:void(0)">标签</a></li>
+        </ul>
+        
+    </section>
    
-    <div class="box2">
+    
+    <section class="box2 clearfix">
     	 <div class="box21">
     	 	<div class="sbox2"><img src="4.png" alt=""class="img-responsive"></div>
     	 	 <p>分栏一</p>
@@ -83,9 +69,9 @@
     	 	<p>分栏三</p>
     	 	<p>分栏小标题</p>
     	 </div>
-    </div>
+    </section>
 
-     <div class="model1">
+     <section class="model1">
      	<div class="m_h1">
      		模块一
      	</div>
@@ -95,10 +81,10 @@
      			 <div class="img1"><img src="7.png" alt="" class="img-responsive"></div>
      		</div>
      		<div class="medium">
-     			<div class="article">这是文案</div>
-     			<div class="article">这是文案</div>
-     			<div class="article">这是文案</div>
-     			<div class="article">这是文案</div>
+     			<div class="articles">这是文案</div>
+     			<div class="articles">这是文案</div>
+     			<div class="articles">这是文案</div>
+     			<div class="articles">这是文案</div>
      		</div>
      		<div class="r">
      			<div class="article2">这是文案</div>
@@ -107,8 +93,9 @@
      			<div class="article2">这是文案</div>
      		</div>
      	</div>
-     </div>
-<div class="model1">
+     </section>
+
+<section class="model1">
      	<div class="m_h1">
      		模块二
      	</div>
@@ -118,10 +105,10 @@
      			 <div class="img1"><img src="7.png" alt="" class="img-responsive"></div>
      		</div>
      		<div class="medium">
-     			<div class="article">这是文案</div>
-     			<div class="article">这是文案</div>
-     			<div class="article">这是文案</div>
-     			<div class="article">这是文案</div>
+     			<div class="articles">这是文案</div>
+     			<div class="articles">这是文案</div>
+     			<div class="articles">这是文案</div>
+     			<div class="articles">这是文案</div>
      		</div>
      		<div class="r">
      			<div class="article2">这是文案</div>
@@ -130,37 +117,41 @@
      			<div class="article2">这是文案</div>
      		</div>
      	</div>
-     </div>
+     </section>
 
- <div class="detail container-fluid">
+ <section class="detail container-fluid">
  	 <div class="detail1 row">
- 	 	 <div class="det_img col-xs-3"><img src="8.png" alt=""class="img-responsive"></div>
- 	 	 <div class="det_main col-xs-9">
+ 	 	 <div class="det_img col-xs-4"><img src="8.png" alt=""class="img-responsive"></div>
+ 	 	 <div class="det_main col-xs-8">
  	 	 	 <p><a href="#">这是文章标题</a></p>
- 	 	 	 <p>文章来源&nbsp;<span>6</span>分钟前</p>
+ 	 	 	 <p>文章来源&nbsp;<span>6分钟前</span></p>
  	 	 </div>
  	 </div>
 
  	 <div class="detail1 row">
- 	 	 <div class="det_img col-xs-3"><img src="8.png" alt=""class="img-responsive"></div>
- 	 	 <div class="det_main col-xs-9">
+ 	 	 <div class="det_img col-xs-4"><img src="8.png" alt=""class="img-responsive"></div>
+ 	 	 <div class="det_main col-xs-8">
  	 	 	 <p><a href="#">这是文章标题</a></p>
- 	 	 	 <p>文章来源&nbsp;<span>6</span>分钟前</p>
+ 	 	 	 <p>文章来源&nbsp;<span>6分钟前</span></p>
  	 	 </div>
  	 </div>
- </div>
 
- <div class="detail_bottom">
- 
- 	  <p><a href="#">这个也是文章标题字号是22的文章标题</a></p>
- 	  <div class="detail_img">
- 	  	 <div class="d_img1"><img src="8.png" alt=""class="img-responsive"></div>
- 	  	 <div class="d_img1"><img src="8.png" alt=""class="img-responsive"></div>
- 	  	 <div class="d_img1"><img src="8.png" alt=""class="img-responsive"></div>
- 	  	 
- 	  </div>
- 	  <p>文章来源&nbsp;<span>6</span>分钟前</p>
- </div>
+
+
+ </section>
+
+     <div class="detail_bottom">
+        
+           <p><a href="#">这个也是文章标题字号是22的文章标题</a></p>
+           <div class="detail_img">
+             <div class="d_img1"><img src="8.png" alt=""class="img-responsive"></div>
+             <div class="d_img1"><img src="8.png" alt=""class="img-responsive"></div>
+             <div class="d_img1"><img src="8.png" alt=""class="img-responsive"></div>
+             
+          </div>
+          <p>文章来源&nbsp;<span>6分钟前</span></p>
+        </div>
+
 
 </body>
 </html>
