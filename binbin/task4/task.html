@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务4</title>
+	<style>
+           span {
+               display: inline-block;
+              margin: 10px 5px;
+              padding: 0px 10px;
+              height: 30px;
+              line-height: 30px;
+              background-color: red;
+              cursor: pointer;
+          }
+      </style>
+
+</head>
+<body>
+	<input type="text" id="input_n">
+	<input type="button" value="左侧入" id="l_in">
+	<input type="button" value="右侧入" id="r_in" >
+	<input type="button" value="左侧出" id="l_out">
+	<input type="button" value="右侧出" id="r_out">
+     
+    <div id="queue">
+    	
+    </div>
+
+	<script>
+      
+          function right_in(queue){
+                var vue=document.getElementById("input_n").value;
+                
+          	    var span=document.createElement("span");
+                 span.innerHTML=vue;
+                 queue.appendChild(span);
+          }
+         function left_in(queue){
+         	   var vue=document.getElementById("input_n").value;
+          	    var span=document.createElement("span");
+          	     span.innerHTML=vue;
+          	     var spanList=queue.childNodes;
+          	     queue.insertBefore(span,spanList[0]);
+         }
+    
+       function left_out(queue){
+              var childs=queue.childNodes;
+              queue.removeChild(childs[0]);
+
+       }
+       function right_out(queue){
+       	    var childs=queue.childNodes;
+       	    queue.removeChild(childs[childs.length-1]);
+       }
+ 
+         function init(){
+          var queue=document.getElementById("queue");
+          document.getElementById("l_in").onclick=function(){
+              left_in(queue);
+          };
+          document.getElementById("r_in").onclick=function(){
+              right_in(queue);
+          };
+          
+           document.getElementById("l_out").onclick=function(){
+              left_out(queue);
+          };
+          document.getElementById("r_out").onclick=function(){
+              right_out(queue);
+          };
+
+           document.getElementById("queue").onclick = function( e ) {
+		        e = e || window.event;
+		         var t = e.target || e.srcElement;  //t:目标对象
+		         var tagName = t.tagName;　//tagName标签名称
+		         if( tagName == 'SPAN' ) {
+		            queue.removeChild(t);　
+		         }
+               }
+
+
+         }
+
+         init();
+	</script>
+</body>
+</html>
