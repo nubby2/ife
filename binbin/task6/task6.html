@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务六</title>
+	<style>
+#container div{
+    height: 50px;
+    color: white;
+    background: gray;
+    float: left;
+    margin-right: 10px;
+}
+span{
+    background: red;
+}
+
+
+	</style>
+</head>
+<body>
+	 <textarea name="" id="input_text" cols="30" rows="10" placeholder="允许一次批量输入多个内容，格式可以为数字、中文、英文等"></textarea>
+	   <p><input type="button" id="btn1" value="确认输入完毕"></p>  
+      <p><input type="text" placeholder="请输入查询词" id="search_word">
+         <input type="button" id="btn2" value="开始查询">
+      </p>
+
+     <div id="container">
+
+     </div> 
+
+      <script>
+    /*  将输入的字符串分割，存放在数值中*/
+           function change(){
+           	 var str=document.getElementById("input_text").value.split(/[,\s、\r]/);
+           	 var arr=new Array();
+
+            for(var i=0;i<str.length;i++){
+                 arr.push(str[i]);
+            }
+             for(var j=0;j<arr.length;j++){
+             	var div=document.createElement("div");
+             	div.innerHTML=arr[j];
+             	container.appendChild(div);
+             }
+           }
+     
+   /* 用replace替换字符串部分内容，返回的d是修改了一部分，增加了span的一个完整字符串  */    
+           function search(){
+                var input=document.getElementById("search_word").value;
+                var divs=container.getElementsByTagName("div");
+                for(var i=0;i<divs.length;i++){
+                	alert(divs[i].innerHTML);
+                	var d=divs[i].innerHTML.replace(new RegExp(input,"g"),"<span>"+input+"</span>");
+                	divs[i].innerHTML=d;
+                }
+           }
+
+/* 绑定事件*/
+           function event(){
+           	 btn1.addEventListener('click',function(){
+           	 	  change();
+           	 },false);
+             btn2.addEventListener('click',function(){
+           	 	  search();
+           	 },false);
+           }
+
+           event();
+      </script>
+
+
+
+
+</body>
+</html>
